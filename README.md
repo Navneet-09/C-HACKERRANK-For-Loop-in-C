@@ -1,5 +1,3 @@
-# C-HACKERRANK-For-Loop-in-C
-In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
 The syntax for the for loop is:
 for ( <expression_1> ; <expression_2> ; <expression_3> )
     <statement>
@@ -32,5 +30,20 @@ even
 odd
 
 Solution below:
-
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() 
+{
+    int a, b, i;
+    scanf("%d\n%d", &a, &b);
+  	// Complete the code.
+    char name[][20] = {" ","one", "two", "three","four","five","six","seven", "eight","nine"};
+    for(i=a;i<=b;i++)
+        {
+            (i<=9) ? printf("%s\n",name[i]):((i%2==0) ? printf("even\n"): printf("odd\n"));
+        }
+    return 0;
+}
 
